@@ -41,3 +41,7 @@ Print multiple columns (the first and the third columns):
 ```bash
 $ awk '{print $1 $3}' FILE
 ```
+
+```bash
+awk 'BEGIN { FS=":"; } { print $1; }' /etc/passwd
+```
